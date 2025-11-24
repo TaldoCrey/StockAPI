@@ -55,7 +55,7 @@ public class User {
 
     @OneToMany(mappedBy = "user") //Um usuário pode ter várias contas
     private List<Account> accounts;
-
+    
     public User() {}
 
     public User(String username, String email, String password, Instant creationTimestamp, Instant updateTimestamp) {
